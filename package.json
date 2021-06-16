@@ -44,7 +44,7 @@
     "shorthash": "0.0.2"
   },
   "dependencies": {
-    "@ampproject/toolbox-optimizer": "^2.7.5",
+    "@ampproject/toolbox-optimizer": "^2.8.1",
     "any-shell-escape": "^0.1.1",
     "clean-css": "^4.2.3",
     "concurrently": "^5.2.0",
@@ -56,6 +56,7 @@
     "hasha": "^5.2.0",
     "html-minifier": "^4.0.0",
     "image-size": "^0.8.3",
+    "jimp": "^0.16.1",
     "lru-cache": "^5.1.1",
     "mocha": "^8.1.3",
     "phin": "^3.5.0",
