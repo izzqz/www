@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <title><%= title %></title>
+    <meta
+            name="description"
+            content="<%= (!!locals.description) ? description : site.description %>"
+    />
+    <meta name="author" content="<%= site.author %>" />
+    <meta property="og:title" content="<%= title %>" />
+    <meta
+            property="og:description"
+            content="<%= (!!locals.description) ? description : site.description %>"
+    />
+    <meta property="og:locale" content="<%= site.locale %>" />
+    <meta property="og:site_name" content="<%= site.site_name %>" />
+    <% if (locals.tags == "posts") { %>
+        <meta property="og:type" content="article" />
+        <meta property="article:published_time" content="<%= date.toISOString() %>" />
+        <script type="application/ld+json">
+      {
+        "description": "<%= (!!locals.description) ? description : site.description %>",
+        "author": { "@type": "Person", "name": "<%= site.author %>" },
+        "@type": "BlogPosting",
+        "url": "<%= `${site.url}${page.url}` %>",
+        "publisher": {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "<%= `${site.url}/assets/images/logo.png` %>"
+          },
+          "name": "<%= site.author %>"
+        },
+        "headline": "<%= title %>",
+        "datePublished": "<%= date.toISOString() %>",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "<%= `${site.url}${page.url}` %>"
+        },
+        "@context": "http://schema.org"
+      }
+
+        </script>
+    <% } %>
+    <%- include('webpack.ejs') %>
+</head>
+
+<body>
+    <div>
+        <div class="site-heading">
+            <svg class="logo" width="64" height="64" version="1.1" viewBox="0 0 135.47 135.47" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <font id="font68966" horiz-adv-x="1024">
+                        <font-face font-family="SVGFont 1" units-per-em="1024"/>
+                        <missing-glyph d="M0,0h1000v1024h-1000z"/>
+                    </font>
+                </defs>
+                <g fill="#00ffc0" stroke-width="5.1004" aria-label="Q">
+                    <path d="m118.94 112.21c10.405-12.037 16.525-27.338 16.525-44.475 0-37.335-30.194-67.733-67.733-67.733-37.335 0-67.733 30.398-67.733 67.733 0 37.539 30.398 67.733 67.733 67.733h0.40803 60.389l-16.321-16.525c2.4482-2.0402 4.6924-4.2843 6.7325-6.7325zm-28.97-1.6321c-3.2643 1.6321-6.5285 3.0602-9.9968 3.8763-3.8763 1.0201-7.9566 1.6321-12.241 1.6321-26.522 0-48.148-21.626-48.148-48.352 0-26.522 21.626-48.148 48.148-48.148 26.726 0 48.352 21.626 48.352 48.148 0 11.629-4.0803 22.238-11.017 30.602-2.0402 2.4482-4.2843 4.6924-6.7325 6.7325-2.6522 2.2442-5.5084 4.0803-8.3647 5.5084z"/>
+                </g>
+            </svg>
+            <span class="title"><%= site.title %></span>
+        </div>
+        <span class="description"><%= site.description %></span>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/about">About</a>
+                </li>
+                <li>
+                    <a href="https://github.com/mr-zzq" target="_blank">GitHub</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-content"><%- content %></div>
+
+    <footer>
+        Made with <span role="img" aria-label="Love">♥</span> by
+        <a href="/about">Me</a>
+    </footer>
+</body>
+</html>
