@@ -1,8 +1,8 @@
 {
   "site_name": "ZZQ Page",
   "title": "Vyacheslav ZZQ",
-  "description": "I'm do stuff",
+  "description": "A personal page of Vyacheslav",
   "url": "https://zzq.one",
   "locale": "en",
-  "author": "Vyacheslav Melnikov"
+  "author": "Vyacheslav Melnikov <vyacheslav@zzq.one>"
 }

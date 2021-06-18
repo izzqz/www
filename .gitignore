@@ -9,6 +9,7 @@
 .lazyimages.json
 
 # Misc
+.idea
 .DS_Store
 Thumbs.db
 npm-debug.log*

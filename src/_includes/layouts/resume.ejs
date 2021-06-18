@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Vyacheslav's Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='index' title='Vyacheslav ZZQ' href='https://zzq.one' />
+
+    <meta name="description" content="Resume of Vyacheslav Melnikov" />
+    <meta name="copyright" content="Vyacheslav Melnikov 2021" />
+    <meta name="Classification" content="Business">
+    <meta name="author" content="Vyacheslav Melnikov, vyacheslav@zzq.one" />
+    <meta name="keywords" content="resume,cv" />
+    <meta name="reply-to" content="vyacheslav@zzq.one">
+    <meta name="url" content="https://zzq.one">
+    <meta name="identifier-URL" content="https://zzq.one">
+    <meta name="category" content="resume">
+    <meta name="revisit-after" content="30 days">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Vyacheslav's Resume" />
+    <meta property="og:type" content="document" />
+    <meta property="og:url" content="https://zzq.one" />
+    <meta property="og:image" content="https://zzq.one/assets/images/portrait-square.png" />
+    <meta property="og:description" content="Resume of Vyacheslav Melnikov" />
+    <meta name="og:email" content="vyacheslav@zzq.one"/>
+
+    <!-- Twitter specific -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="https://zzq.one" />
+    <meta name="twitter:title" content="Vyacheslav's Resume" />
+    <meta name="twitter:description" content="Resume of Vyacheslav Melnikov" />
+    <meta name="twitter:image" content="https://zzq.one/assets/images/portrait-square.png" />
+
+    <%- include('webpack.ejs') %>
+</head>
+<body>
+<style>
+    #printButton {
+        cursor: pointer;
+    }
+
+    @media print {
+        @page {
+            size: letter;
+        }
+
+        #printButton {
+            display: none;
+        }
+    }
+</style>
+<section itemscope itemtype="https://schema.org/Person">
+    <h1 itemprop="name" style="font-size: 2rem">Vyacheslav Melnikov</h1>
+    <nav>
+        <ul>
+            <li>
+                <a itemprop="email" href="mailto:vyacheslav@zzq.one" class="text-link">vyacheslav@zzq.one</a>
+            </li>
+            <li>
+                <a itemprop="url" href="https://zzq.one" class="text-link" target='_blank' >https://zzq.one</a>
+            </li>
+            <li>
+                <a href="https://github.com/mr-zzq" class="text-link" target='_blank' >git.io/mr-zzq</a>
+            </li>
+        </ul>
+    </nav>
+
+    <p>
+        <span itemprop="jobTitle">Backend Developer</span>
+        that enjoys <span itemprop="knowsAbout">NodeJS and web things</span>.
+    </p>
+</section>
+
+<%- content; %>
+
+<nav>
+    <ul>
+        <li>
+            <a onClick="window.print()" class="text-link" id="printButton">Print this</a>
+        </li>
+    </ul>
+</nav>
+</body>
+</html>
