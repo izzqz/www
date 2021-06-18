@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+---
+permalink: resume/index.html
+layout: null
+eleventyExcludeFromCollections: true
+---
+
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -32,7 +37,7 @@
     <meta name="twitter:description" content="Resume of Vyacheslav Melnikov" />
     <meta name="twitter:image" content="https://zzq.one/assets/images/portrait-square.png" />
 
-    <%- include('webpack.ejs') %>
+    <%- include('_includes/layouts/webpack.ejs') %>
 </head>
 <body>
 <style>
@@ -71,8 +76,6 @@
         that enjoys <span itemprop="knowsAbout">NodeJS and web things</span>.
     </p>
 </section>
-
-<%- content; %>
 
 <nav>
     <ul>

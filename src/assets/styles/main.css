@@ -12,10 +12,10 @@
     --nc-lk-1: #0070F3;
     --nc-lk-2: #0366D6;
     --nc-lk-tx: #FFFFFF;
-    --nc-ac-1: #79FFE1;
+    --nc-ac-1: #00ffc0;
     --nc-ac-tx: #0C4047;
 
-    --heading-color: #85bbc5
+    --heading-color: #86c6b8;
 }
 
 * {
@@ -88,12 +88,6 @@ body {
     color: var(--nc-tx-2);
     font-size: 1.03rem;
     line-height: 1.5;
-}
-
-::selection {
-    /* Set background color for selected text */
-    background: var(--nc-ac-1);
-    color: var(--nc-ac-tx);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -346,7 +340,7 @@ pre {
 }
 
 kbd {
-    /* Makes the kbd element look like a keyboard key */
+    /* Makes the kbd element look like a keyboard key.asc */
     border-bottom: 3px solid var(--nc-bg-3);
 }
 
