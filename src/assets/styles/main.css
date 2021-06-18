@@ -177,6 +177,7 @@ a:hover {
     text-decoration: none;
 }
 
+/* TODO: Visited links */
 /*a:visited {*/
 /*    color: #551A8B;*/
 /*}*/
@@ -192,13 +193,20 @@ a:hover::before, a:hover::after {
 
 a::before {
     content: "[";
-    color: #cecece;
+    color: #eaeaea;
 }
 
 a::after {
     content: "]";
-    color: #cecece;
+    color: #eaeaea;
 }
+
+/* This adds arrow for external link */
+a[href^="http"]::after {
+    content: "\1F855]"
+}
+
+
 
 abbr:hover {
     /* Set the '?' cursor while hovering an abbreviation */
@@ -274,7 +282,6 @@ input[type="button"] {
     border-radius: 4px;
     box-sizing: border-box;
     cursor: pointer;
-    color: var(--nc-lk-tx);
 }
 
 a button[disabled],
@@ -282,7 +289,6 @@ button[disabled],
 input[type="submit"][disabled],
 input[type="reset"][disabled],
 input[type="button"][disabled] {
-    cursor: default;
     opacity: .5;
 
     /* Set the [X] cursor while hovering a disabled link */
