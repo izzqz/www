@@ -17,7 +17,7 @@ TODO: About page right here
 <ul>
   <% list.forEach((post) => { %>
   <li>
-    <a href="<%= post.url %>"><%= post.data.title %></a>
+    <a href="<%= post.url %>" class="text-link"><%= post.data.title %></a>
 
     <div><%= this.dateFns.format(new Date(post.data.date), 'LLLL d, yyyy') %></div>
   </li>

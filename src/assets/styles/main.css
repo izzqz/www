@@ -74,7 +74,9 @@ body {
     flex-direction: column;
     /* Center body in page */
     margin: 0 auto;
+    padding-left: 2.6rem;
     max-width: 750px;
+    min-width: 412px;
     border-radius: 6px;
     overflow-x: hidden;
     word-break: break-word;
@@ -191,22 +193,38 @@ a:hover::before, a:hover::after {
     text-decoration: none;
 }
 
-a::before {
+a.text-link::before {
     content: "[";
     color: #eaeaea;
 }
 
-a::after {
+a.text-link::after {
     content: "]";
     color: #eaeaea;
 }
 
 /* This adds arrow for external link */
-a[href^="http"]::after {
+a[target="_blank"].text-link::after {
     content: "\1F855]"
 }
 
+/*a[src]::before,*/
+/*a[alt]::before,*/
+/*a[data-arc]::before,*/
+/*a[class]::before,*/
+/*a[width]::before,*/
+/*a[height]::before {*/
+/*    content: none !important;*/
+/*}*/
 
+/*a[src]::after,*/
+/*a[alt]::after,*/
+/*a[data-arc]::after,*/
+/*a[class]::after,*/
+/*a[width]::after,*/
+/*a[height]::after {*/
+/*    content: none !important;*/
+/*}*/
 
 abbr:hover {
     /* Set the '?' cursor while hovering an abbreviation */
@@ -549,6 +567,7 @@ footer {
 
 span[aria-label="Love"] {
     font-size: 1.2rem;
+    cursor: crosshair;
 }
 
 span[aria-label="Love"]:hover  {
