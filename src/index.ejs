@@ -1,23 +1,31 @@
 ---
 pagination:
   data: collections.posts
-  size: 5
+  size: 3
   alias: list
   reverse: true
 permalink: '<% if (pagination.pageNumber > 0) { %><%= `page${pagination.pageNumber + 1}/index.html` %><% } else { %>index.html<% } %>'
 eleventyComputed:
   title: '<% if (pagination.pageNumber > 0) { %><%= `Page ${pagination.pageNumber + 1} | ${site.title}` %><% } else { %><%= site.title %><% } %>'
 ---
-<!--
-TODO: About page right here
--->
-<h3>My last posts</h3>
+
+Welcome to another personal website
+
+<h2>What i do?</h2>
+
+<p>
+  🧑‍💻 White code on <a href="https://github/izzqz">GitHub</a><br>
+  📝 Trying to dev <a href="/blog">Blog</a><br>
+  📺 Streaming my life on <a href="https://twitch.tv/izzqz">Twitch</a> <b>[🇷🇺/🇬🇧]</b> <br>
+</p>
+
+<h2>My last posts</h2>
 
 <ul>
   <% list.forEach((post) => { %>
   <li>
     <a href="<%= post.url %>" class="text-link"><%= post.data.title %></a>
-
+    
     <div><%= this.dateFns.format(new Date(post.data.date), 'LLLL d, yyyy') %></div>
   </li>
   <% }) %>
@@ -34,3 +42,19 @@ TODO: About page right here
   </div>
   <% } %>
 </div>
+
+<h2>Pet Projects</h2>
+
+<ul>
+  <li>
+    <a href="https://github.com/izzqz/dotfiles" class="text-link">Project name</a>
+    <div>Description</div>
+  </li>
+</ul>
+
+<h2>Other</h2>
+
+<p>
+  I also have <a arrow href="https://keybase.io/izzqz">keybase</a> with extra identities and my <a arrow href="https://keybase.io/izzqz/pgp_keys.asc">PGP key</a>.
+  If you want to help me see <a href="/donate">Donation page</a>
+</p>

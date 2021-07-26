@@ -1,0 +1,18 @@
+---
+title: All posts
+description: All izzqz's blog posts
+permalink: blog/index.html
+---
+
+<h2>All posts</h2>
+
+<ul>
+  <% collections.posts.forEach((post) => { %>
+  <li>
+    <a href="<%= post.url %>" class="text-link" style="font-size: x-large"><%= post.data.title %></a>
+    <br>
+    <span><%= post.data.description %></span>
+    <div style="color: gray;"><%= this.dateFns.format(new Date(post.data.date), 'LLLL d, yyyy') %></div>
+  </li>
+  <% }) %>
+</ul>

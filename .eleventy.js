@@ -5,7 +5,7 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
-
+  
   eleventyConfig.addPlugin(lazyImagesPlugin, {
     transformImgPath: (imgPath) => {
       if (imgPath.startsWith('http://') || imgPath.startsWith('https://')) {
@@ -35,6 +35,7 @@ module.exports = function (eleventyConfig) {
         removeComments: true,
         collapseWhitespace: true,
         minifyJS: true,
+        minifyCSS: true
       });
       return minified;
     }

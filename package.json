@@ -1,7 +1,7 @@
 {
-  "name": "zzq-one",
-  "version": "1.0.0",
-  "description": "zzq.one page",
+  "name": "izzqz.me",
+  "version": "2.0.0",
+  "description": "izzqz.me webpage",
   "scripts": {
     "build-dev:webpack": "webpack",
     "watch:webpack": "webpack --watch",
@@ -17,7 +17,7 @@
     "format:json": "prettier '**/*.json' --write",
     "format": "run-s format:*"
   },
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.1",
