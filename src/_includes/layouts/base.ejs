@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Aditional thinks -->
+    <link rel="pgpkey" href="https://keybase.io/izzqz/pgp_keys.asc" />
+
+    <!-- Favicons -->
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="icon" href="/favicon.ico" />
+
     <title><%= title; %></title>
+
     <meta
       name="description"
       content="<%= (!!locals.description) ? description : site.description; %>"
@@ -62,7 +68,7 @@
             <a href="/resume" class="text-link">Résumé</a>
           </li>
           <li>
-            <a href="https://github.com/izzqz" class="text-link">Code</a>
+            <a arrow href="https://github.com/izzqz" class="text-link">Code</a>
           </li>
           <li>
             <a href="/blog" class="text-link">All posts</a>
@@ -76,6 +82,15 @@
     <footer>
       Made with <span role="img" aria-label="Love">♥</span> by
       <a href="/">Me</a>
+      <div>
+        <a class="text-link" href="/donation">$ Donation $</a>
+      </div>
     </footer>
+    <!-- Cloudflare Web Analytics -->
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "9713f27c397d4c21980783ed11eb02d9"}'
+    ></script>
   </body>
 </html>
