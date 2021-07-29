@@ -11,15 +11,16 @@ eleventyComputed:
 
 Welcome to another personal website
 
-<h2>What i do?</h2>
+<h1 class="no-accent">What i do?</h1>
 
 <p>
-  🧑‍💻 White code on <a href="https://github/izzqz">GitHub</a><br>
-  📝 Trying to dev <a href="/blog">Blog</a><br>
-  📺 Streaming my life on <a href="https://twitch.tv/izzqz">Twitch</a> <b>[🇷🇺/🇬🇧]</b><br>
+  🧑‍💻 White code on <a arrow href="https://github.com/izzqz" target="_blank" rel="noopener noreferrer"><i data-feather="github"></i>GitHub</a><br>
+  📝 Trying to dev <a href="/blog"><i data-feather="edit-2"></i>Blog</a><br>
+  And more other thing...
+  <!-- 📺 Streaming my life on <a href="https://twitch.tv/izzqz"><i data-feather="twitch"></i>Twitch</a> <b>[🇷🇺/🇬🇧]</b><br> -->
 </p>
 
-<h2>My last posts</h2>
+<h1 class="no-accent">My last posts</h1>
 
 <ul>
   <% list.forEach((post) => { %>
@@ -34,27 +35,20 @@ Welcome to another personal website
 <div>
   <% if (pagination.previous) { %>
   <div>
-    <a href="<%= pagination.previous.replace(/index.html$/, "") %>">← Newer Posts</a>
+    <a href="<%= pagination.previous.replace(/index.html$/, "") %>"><i data-feather="arrow-left"></i> Newer Posts</a>
   </div>
   <% } %> <% if (pagination.next) { %>
   <div>
-    <a href="<%= pagination.next.replace(/index.html$/, "") %>">Older Posts →</a>
+    <a href="<%= pagination.next.replace(/index.html$/, "") %>">Older Posts <i data-feather="arrow-right"></i></a>
   </div>
   <% } %>
 </div>
 
-<h2>Pet Projects</h2>
+<!-- <h2>Pet Projects</h2>
 
 <ul>
   <li>
     <a href="https://github.com/izzqz/dotfiles" class="text-link">Project name</a>
     <div>Description</div>
   </li>
-</ul>
-
-<h2>Other</h2>
-
-<p>
-  I also have <a arrow href="https://keybase.io/izzqz">keybase</a> with extra identities and my <a arrow href="https://keybase.io/izzqz/pgp_keys.asc">PGP key</a>.
-  If you want to help me see <a href="/donate">Donation page</a>
-</p>
+</ul> -->
