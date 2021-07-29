@@ -74,13 +74,25 @@ html {
     height: 100%;
 }
 
+@media only screen and (max-device-width: 480px) {
+    body {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }    
+}
+
+@media only screen and (min-device-width: 480px) {
+    body {
+        padding-left: 2.6rem;
+        padding-right: 2.6rem;
+    }    
+}
+
 body {
     display: flex;
     flex-direction: column;
     /* Center body in page */
     margin: 0 auto;
-    padding-left: 2.6rem;
-    padding-right: 2.6rem;
     max-width: 40em;
     min-width: 26em;
     border-radius: 10px; 
