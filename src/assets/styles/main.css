@@ -203,6 +203,11 @@ a {
     text-decoration: none;
 }
 
+a[disabled] {
+    color: #cacaca;
+    cursor: not-allowed;
+}
+
 a:hover {
     color: #f00 !important;
     text-decoration: none;
