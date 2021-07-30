@@ -7,9 +7,9 @@ permalink: blog/index.html
 <h2>All posts</h2>
 
 <ul>
-  <% collections.posts.forEach((post) => { %>
+  <% collections.posts.reverse().forEach((post) => { %>
   <li>
-    <a href="<%= post.url %>" class="text-link" style="font-size: x-large"
+    <a href="<%= post.url %>" class="text-link" style="font-size: 1.5rem"
       ><%= post.data.title %></a
     >
     <br />

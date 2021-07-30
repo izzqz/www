@@ -7,9 +7,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const entries = glob.sync(path.resolve(__dirname, 'src/assets/images/posts/*.{png,gif,jpg,jpeg}'));
 
 entries.push(path.resolve(__dirname, 'src/assets/styles/main.css'));
+entries.push(path.resolve(__dirname, 'src/assets/styles/share-footer.css'));
 entries.push(path.resolve(__dirname, 'src/assets/styles/prism-atom-dark.css'));
-
-entries.push(path.resolve(__dirname, 'src/assets/js/index.js'));
 
 let cssFileName = 'styles/[name].css';
 
