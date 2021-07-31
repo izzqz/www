@@ -63,7 +63,6 @@
         <% } %>
         <!-- CDN Dependencies -->
         <script src="https://unpkg.com/feather-icons"></script>
-        <script src="/welcome.js"></script>
 
         <%- include('webpack.ejs') %>
     </head>
@@ -133,5 +132,6 @@
             defer src='https://static.cloudflareinsights.com/beacon.min.js'
             data-cf-beacon='{"token": "c3abad66a6b248fa932a76d03cad10f8"}'>
         </script>
+        <script defer src="/welcome.js"></script>
     </body>
 </html>
