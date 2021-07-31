@@ -1,0 +1,29 @@
+---
+permalink: feed.json
+eleventyExcludeFromCollections: true
+layout: null
+---
+
+<%-
+(function generateJsonFeed() {
+    return JSON.stringify({
+        version: "https://jsonfeed.org/version/1",
+        title: site.title,
+        home_page_url: site.url,
+        feed_url: `${site.url}/feed.json`,
+        author: {
+            name: site.author,
+            url: site.url
+        },
+        items: collections.posts.reverse().map(post => {
+            const url = `${site.url}${post.url}`;
+            return {
+                id: url,
+                summary: post.data.description,
+                date_published: post.date,
+                url: url,
+            }
+        })
+    }, null, 4)
+})()
+%> 
