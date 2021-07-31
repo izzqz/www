@@ -7,16 +7,19 @@ permalink: blog/index.html
 <h2>All posts</h2>
 
 <ul>
-  <% collections.posts.reverse().forEach((post) => { %>
-  <li>
-    <a href="<%= post.url %>" class="text-link" style="font-size: 1.5rem"
-      ><%= post.data.title %></a
-    >
-    <br />
-    <span><%= post.data.description %></span>
-    <div style="color: gray">
-      <%= this.dateFns.format(new Date(post.data.date), 'LLLL d, yyyy') %>
-    </div>
-  </li>
-  <% }) %>
+    <% collections.posts.reverse().forEach((post) => { %>
+    <li>
+        <article class="h-entry">
+            <a href="<%- post.url %>" class="text-link p-name u-url" style="font-size: 1.5rem"
+                ><%- post.data.title %></a
+            >
+            <br />
+            <span class="p-summary"><%- post.data.description %></span>
+            <br />
+            <time class="dt-published" style="color: gray" datetime="<%- post.data.date.toISOString() %>">
+                <%= this.dateFns.format(new Date(post.data.date), 'LLLL d, yyyy') %>
+            </time>
+        </article>
+    </li>
+    <% }) %>
 </ul>

@@ -28,14 +28,21 @@ Welcome to another personal website
     <!-- </li> -->
 </ul>
 
-<h1 class="no-accent">My last posts</h1>
+<h1>My last posts</h1>
 
 <ul>
   <% list.forEach((post) => { %>
   <li>
-    <a href="<%= post.url %>" class="text-link"><%= post.data.title %></a>
-    
-    <div><%= this.dateFns.format(new Date(post.data.date), 'LLLL d, yyyy') %></div>
+      <article class="e-entry">
+        <a href="<%= post.url %>" class="text-link p-name"><%= post.data.title %></a>
+        <br>
+        <time
+            class="dt-published"
+            datetime="<%= post.data.date.toISOString() %>"
+        >
+            <%= this.dateFns.format(new Date(post.data.date), 'LLLL d, yyyy') %>
+        </time>    
+      </article>
   </li>
   <% }) %>
 </ul>

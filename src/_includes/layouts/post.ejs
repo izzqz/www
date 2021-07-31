@@ -2,12 +2,14 @@
 layout: layouts/base.ejs
 ---
 
-<article>
-    <span><%= this.dateFns.format(new Date(date), 'LLLL d, yyyy') %></span>
-    
-    <h1 class="accent"><%= title %></h1>
-    
-    <section><%- content %></section>
+<article class="h-entry">
+    <time class="dt-published" datetime="<%- date.toISOString() %>"
+        ><%= this.dateFns.format(new Date(date), 'LLLL d, yyyy') %></time
+    >
+    <a class="u-url" href="<%= `${site.url}${page.url}`; %>"></a>
+    <h1 class="accent p-name"><%= title %></h1>
+
+    <section class="e-content"><%- content %></section>
 
     <div class="share-footer">
         <a id="tweet-button" href="#" rel="noopener noreferrer nofollow" target="_blank"
@@ -18,7 +20,10 @@ layout: layouts/base.ejs
 
             tweet.searchParams.append('original_referer', window.location.origin);
             tweet.searchParams.append('ref_src', 'twsrc^tfw|twcamp^buttonembed|twterm^share|twgr^'); // Wait, That's Illegal.
-            tweet.searchParams.append('text', 'Hey @izzqz_ thanks for post\n' + window.location.href);
+            tweet.searchParams.append(
+                'text',
+                'Hey @izzqz_ thanks for post\n' + window.location.href
+            );
 
             document.getElementById('tweet-button').href = tweet.href;
         </script>
