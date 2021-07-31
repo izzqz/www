@@ -2,7 +2,9 @@
     "site_name": "izzqz page",
     "title": "Vyacheslav izzqz",
     "description": "A personal page of Vyacheslav Melnikov",
+    "blog_subtitle": "This is just a dev blog of izzqz",
     "url": "https://izzqz.me",
     "locale": "en",
-    "author": "Vyacheslav Melnikov <vyacheslav@izzqz.me>"
+    "author": "Vyacheslav Melnikov",
+    "email": "vyacheslav@izzqz.me"
 }
