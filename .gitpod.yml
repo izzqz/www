@@ -1,0 +1,7 @@
+tasks:
+  - init: npm i
+    command: npm run dev
+
+ports:
+  - port: 8080
+    onOpen: ignore
