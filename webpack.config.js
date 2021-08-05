@@ -8,6 +8,7 @@ const entries = glob.sync(path.resolve(__dirname, 'src/assets/images/posts/*.{pn
 
 entries.push(path.resolve(__dirname, 'src/assets/styles/main.css'));
 entries.push(path.resolve(__dirname, 'src/assets/styles/share-footer.css'));
+entries.push(path.resolve(__dirname, 'src/assets/styles/resume.css'));
 entries.push(path.resolve(__dirname, 'src/assets/styles/prism-atom-dark.css'));
 
 let cssFileName = 'styles/[name].css';

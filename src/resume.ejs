@@ -63,10 +63,7 @@ layout: null
         <nav class="header">
             <ul>
                 <li>
-                    <a
-                        onClick="window.print()"
-                        href="#"
-                        class="text-link hide-on-print"
+                    <a onClick="window.print()" href="#" class="text-link hide-on-print"
                         ><i data-feather="printer"></i>Print this</a
                     >
                 </li>
@@ -74,6 +71,11 @@ layout: null
                     <a href="/resume.pdf" class="text-link hide-on-print" id="pdfDownloadButton"
                         ><i data-feather="download"></i>Download PDF <%= resume.pdfSize %>
                     </a>
+                </li>
+                <li>
+                    <a href="/resume-short" class="text-link hide-on-print"
+                        ><i data-feather="file"></i>One page version</a
+                    >
                 </li>
             </ul>
         </nav>
@@ -104,11 +106,9 @@ layout: null
                 </ul>
             </nav>
 
-            <h2>What i do</h2>
+            <h2>Current interests and ambitions</h2>
 
-            <p>
-                I'm interest on web app development. 
-            </p>
+            <p>I'm interest on web app development.</p>
             <p>
                 So, my area of competence is Frontend/Backend development and System Administration.
                 I'm partly interested in software engendering, media codec solutions and project
@@ -120,13 +120,52 @@ layout: null
                 hard problems.
             </p>
 
-            <h2>Current interests and ambitions</h2>
-
-            <p>
-                
-            </p>
-
             <h2>Experience</h2>
+
+            <ul>
+                <li>
+                    <span class="title"> Fullstack Developer | H.I.T. </span>
+                    <br>
+                    <span class="date"> full-time [2019-2020]</span>
+                    <ul class="tags-container">
+                        <li>Node</li>
+                        <li>Nest.js</li>
+                        <li>GraphQL</li>
+                        <li>MongoDB</li>
+                        <li>Jest</li>
+                        <li>Svelte</li>
+                        <li>Cloudflare Workers</li>
+                        <li>GitHub Actions</li>
+                    </ul>
+                    <div class="description">
+                        Working on a startup whitch converting mouse sensitivity between different
+                        game engines.
+                        <ul>
+                            <li>Develop and design backend API (GQL/REST).</li>
+                            <li>Develop frontend SPA.</li>
+                            <li>
+                                Do a lot of research about trigonometry behind camera motion in 3D games.
+                                And included it to the application logic.
+                            </li>
+                        </ul>
+                        The project did not realeased to production.
+                    </div>
+                </li>
+                <li>
+                    <span class="title">System Administrator | ZST Electronics</span>
+                    <span class="date"> part-time [2019-2019]</span>
+                    <div class="description">
+                        
+                    </div>
+                </li>
+                <li>
+                    <span class="title">Frontend Developer | Freelance</span>
+                    <span class="date">[2017-2019]</span>
+                    <div class="description">
+                        
+                    </div>
+                </li>
+            </ul>
 
             <h2>Technical Skills</h2>
             <a arrow href="https://en.wikipedia.org/wiki/Kadykchan">Kadykchan</a>

@@ -1,0 +1,36 @@
+span.date {
+    color: #808080;
+    white-space: nowrap;
+}
+
+span.title {
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+.description ul {
+    margin-bottom: 0.5rem;
+}
+
+.description li::marker {
+    font-size: 1.1rem;
+}
+
+.tags-container {
+    margin-bottom: 0.5rem;
+}
+
+ul.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+.tags-container li {
+    list-style-type: none;
+    padding: 0 .5rem;
+    background-color: #ebebeb;
+    margin-right: .5rem;
+    border-radius: .25rem;
+}

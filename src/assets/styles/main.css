@@ -79,14 +79,14 @@ html {
     body {
         padding-left: 1rem;
         padding-right: 1rem;
-    }    
+    }
 }
 
 @media only screen and (min-device-width: 480px) {
     body {
         padding-left: 2.6rem;
         padding-right: 2.6rem;
-    }    
+    }
 }
 
 body {
@@ -96,7 +96,7 @@ body {
     margin: 0 auto;
     max-width: 40em;
     min-width: 26em;
-    border-radius: 10px; 
+    border-radius: 10px;
     overflow-x: hidden;
     word-break: break-word;
     overflow-wrap: break-word;
@@ -518,6 +518,13 @@ ul {
 
 li {
     margin-top: 0.4rem;
+    list-style-type: '-';
+    padding-inline-start: 1ch;
+}
+
+li::marker {
+    font-size: 1.5em;
+    font-weight: bolder;
 }
 
 ul ul,
@@ -579,7 +586,7 @@ nav ul li {
     padding: 2rem 0 0 0;
 
     font-size: 2.25rem;
-    font-weight: bolder
+    font-weight: bolder;
 }
 
 .site-heading.disabled a {

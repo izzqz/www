@@ -7,11 +7,49 @@ eleventyExcludeFromCollections: true
 
 <h1>404 Not found</h1>
 <span style="font-size: 1.3rem">Go <a href="/" class="text-link">back to safety</a> now!</span>
-<iframe
-    src="https://giphy.com/embed/6P5ghEyGd6Kqs"
-    width="480"
-    height="192"
-    frameBorder="0"
-    class="giphy-embed"
-    allowFullScreen
-></iframe>
+<pre id="monitor"></pre>
+<span>melancholy @ sorrow @ sadness</span><br />
+<span>asciimation by <a href="https://asciimator.net/asciimation/7/">karaboz</a></span>
+<style>
+    pre {
+        word-wrap: unset;
+        font-size: 1.4rem;
+        background: none;
+        border: none;
+        border-radius: none;
+        padding: 0;
+    }
+</style>
+<script>
+    const monitor = document.getElementById('monitor');
+
+    const frames = [
+        `@@@@||         0|0        ||@@@@
+@@@@||         |||   _    ||@@@@
+@@@@||  /\\-/\\  |||  \<o>   ||@@@@
+@@@@|| (  =  ) |||   |    ||@@@@
+@@@@||  )   (  |||  )-(   ||@@@@
+@@@@||_(__ __)_|||__\\_/___||@@@@
+@@@@|_____)\\____|__________|@@@@
+@@@@@@@@(__/@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@`,
+        `@@@@||         0|0        ||@@@@
+@@@@||         |||   _    ||@@@@
+@@@@||  /\\-/\\  |||  \<o>   ||@@@@
+@@@@|| (  =  ) |||   |    ||@@@@
+@@@@||  )   (  |||  )-(   ||@@@@
+@@@@||_(__ __)_|||__\\_/___||@@@@
+@@@@|____/(_____|__________|@@@@
+@@@@@@@@@\\__)@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@`,
+    ];
+
+    let currentFrame = 1;
+
+    function changeFrame() {
+        currentFrame = !!currentFrame ? 0 : 1;
+        monitor.innerText = frames[currentFrame];
+    }
+    changeFrame();
+    setInterval(changeFrame, 1000);
+</script>
