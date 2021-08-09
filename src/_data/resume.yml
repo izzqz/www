@@ -35,6 +35,10 @@ technologies:
             level: 1
             icon: <i class="devicon-rust-plain"></i>
 
+          - name: Bash
+            level: 2
+            icon: <i class="devicon-bash-plain"></i>
+
     - sectionName: Frontend
       list:
           - name: Web Components
@@ -60,6 +64,13 @@ technologies:
           - name: GNU/Linux
             level: 2
             icon: <i class="devicon-linux-plain"></i>
+
+          - name: Nginx
+            level: 2
+            icon: <i class="devicon-nginx-original"></i>
+
+          - name: Caddy
+            level: 1
 
           - name: NodeJS
             level: 3
@@ -94,6 +105,9 @@ technologies:
             level: 1
             icon: <i class="devicon-mysql-plain"></i>
 
+          - name: SQLite
+            level: 2
+
     - sectionName: CI/CD
       list:
           - name: GH Actions
@@ -105,13 +119,13 @@ technologies:
             icon: <i class="devicon-gitlab-plain"></i>
 
           - name: Docker
-            level: 2
+            level: 1
             icon: <i class="devicon-docker-plain"></i>
 
-          - name: TeamCity
-            level: 1
+          - name: Ansible
+            level: 2
 
-    - sectionName: Hosting
+    - sectionName: Cloud Hosting
       list:
           - name: CF Workers
             level: 3
@@ -130,3 +144,22 @@ technologies:
           - name: Oracle
             level: 1
             icon: <i class="devicon-oracle-original"></i>
+
+    - sectionName: Libs
+      list:
+          - name: FFmpeg
+            level: 2
+          
+          - name: RxJs
+            level: 1
+
+          - name: Jest
+            level: 2
+            icon: <i class="devicon-jest-plain"></i>
+
+          - name: Mongoose
+            level: 3
+
+          - name: TypeORM
+            level: 1
+          
