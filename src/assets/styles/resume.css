@@ -16,21 +16,83 @@ span.title {
     font-size: 1.1rem;
 }
 
-.tags-container {
-    margin-bottom: 0.5rem;
-}
-
 ul.tags-container {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
+    margin-bottom: 0.5rem;
 }
 
-.tags-container li {
+ul.tags-container li {
+    display: flex;
+    align-items: center;
     list-style-type: none;
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
     background-color: #ebebeb;
-    margin-right: .5rem;
-    border-radius: .25rem;
+    margin-right: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.technologies-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.technologies-section figure {
+    margin: 0 1rem 1rem 0;
+    padding: 1rem;
+    background-color: #ebebeb;
+    border-radius: 0.3rem;
+    min-width: 10rem;
+}
+
+.technologies-section figcaption {
+    font-weight: 900;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.technologies-section ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.technologies-section li {
+    margin-top: -0.5rem;
+    list-style-type: disc;
+    padding-inline-start: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.technologies-section li i {
+    margin-right: 0.2rem;
+    color: #696969;
+}
+
+.technologies-section li::before {
+    font-size: 1.5rem;
+    content: '\2022';
+    margin-right: 0.2rem;
+}
+
+.technologies-section li.level-3::before {
+    color: #ff0000;
+}
+
+.technologies-section li.level-2::before {
+    color: #ffa500;
+}
+
+.technologies-section li.level-1::before {
+    color: #808080;
 }

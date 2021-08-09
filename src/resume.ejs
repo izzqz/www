@@ -35,7 +35,13 @@ layout: null
         <meta name="twitter:description" content="Resume of Vyacheslav Melnikov" />
         <meta name="twitter:image" content="https://izzqz.me/assets/images/portrait-square.png" />
 
-        <script src="https://unpkg.com/feather-icons"></script>
+        <!-- CDN Debpendensies -->
+        <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css"
+        />
+        <script src="https://unpkg.com/colcade@0/colcade.js"></script>
 
         <%- include('_includes/layouts/webpack.ejs') %>
     </head>
@@ -60,7 +66,7 @@ layout: null
             }
         </style>
 
-        <nav class="header">
+        <nav class="header hide-on-print">
             <ul>
                 <li>
                     <a onClick="window.print()" href="#" class="text-link hide-on-print"
@@ -125,17 +131,18 @@ layout: null
             <ul>
                 <li>
                     <span class="title"> Fullstack Developer | H.I.T. </span>
-                    <br>
                     <span class="date"> full-time [2019-2020]</span>
                     <ul class="tags-container">
-                        <li>Node</li>
-                        <li>Nest.js</li>
-                        <li>GraphQL</li>
-                        <li>MongoDB</li>
-                        <li>Jest</li>
+                        <li><i class="devicon-nodejs-plain colored"></i>&emsp14;Node</li>
+                        <li><i class="devicon-nestjs-plain colored"></i>&emsp14;Nest.js</li>
+                        <li><i class="devicon-graphql-plain colored"></i>&emsp14;GraphQL</li>
+                        <li><i class="devicon-mongodb-plain colored"></i>&emsp14;MongoDB</li>
+                        <li><i class="devicon-jest-plain colored"></i>&emsp14;Jest</li>
                         <li>Svelte</li>
                         <li>Cloudflare Workers</li>
-                        <li>GitHub Actions</li>
+                        <li>
+                            <i class="devicon-github-original colored"></i>&emsp14;GitHub Actions
+                        </li>
                     </ul>
                     <div class="description">
                         Working on a startup whitch converting mouse sensitivity between different
@@ -144,32 +151,55 @@ layout: null
                             <li>Develop and design backend API (GQL/REST).</li>
                             <li>Develop frontend SPA.</li>
                             <li>
-                                Do a lot of research about trigonometry behind camera motion in 3D games.
-                                And included it to the application logic.
+                                Do a lot of research about trigonometry behind camera motion in 3D
+                                games. And included it to the application logic.
                             </li>
                         </ul>
                         The project did not realeased to production.
                     </div>
                 </li>
                 <li>
-                    <span class="title">System Administrator | ZST Electronics</span>
-                    <span class="date"> part-time [2019-2019]</span>
+                    <span class="title">Freelance Experience</span>
+                    <span class="date">part-time [2017-2019]</span>
                     <div class="description">
-                        
-                    </div>
-                </li>
-                <li>
-                    <span class="title">Frontend Developer | Freelance</span>
-                    <span class="date">[2017-2019]</span>
-                    <div class="description">
-                        
+                        Worked on a variety of freelance projects. Here is a list of those that I am
+                        most proud of:
+                        <ul>
+                            <li>shadowsocks setup</li>
+                            <li>todo</li>
+                        </ul>
                     </div>
                 </li>
             </ul>
 
             <h2>Technical Skills</h2>
-            <a arrow href="https://en.wikipedia.org/wiki/Kadykchan">Kadykchan</a>
+
+            <h3>Technologes</h3>
+            <div class="technologies-section">
+                <% resume.technologies.forEach(s => { %>
+                <figure>
+                    <figcaption><%= s.sectionName %></figcaption>
+                    <ul>
+                        <% s.list.forEach(tech => { %>
+                        <%
+                        let devicon;
+                        if (tech.deviconClass) devicon = `<i class="${tech.deviconClass}"></i>`
+                        %>
+                        <li class="level-<%= tech.level %>">
+                            <%- devicon %><%= tech.name %>
+                        </li>
+                        <% }); %>
+                    </ul>
+                </figure>
+                <% }); %>
+            </div>
+            <h3>Languages</h3>
+
             <h2>Education</h2>
+
+            <h2>Additional</h2>
+            <h3>Other experience</h3>
+            <h3>About me and other interests</h3>
         </section>
         <script>
             feather.replace({

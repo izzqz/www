@@ -2,6 +2,7 @@ const htmlmin = require('html-minifier');
 const dateFns = require('date-fns');
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const yaml = require("js-yaml");
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(syntaxHighlight);
@@ -16,6 +17,8 @@ module.exports = function (eleventyConfig) {
             }
         },
     });
+   
+    eleventyConfig.addDataExtension("yml", contents => yaml.load(contents));
 
     eleventyConfig.setEjsOptions({
         rmWhitespace: true,

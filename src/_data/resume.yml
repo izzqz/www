@@ -1,0 +1,106 @@
+---
+pdfSize: '2.6Mb'
+# Any section has list with 3 diferent levels
+# 1 -> Partly used
+# 2 -> Advanced used
+# 3 -> Expert
+technologies:
+    - sectionName: Languages
+      list:
+          - name: JavaScript
+            level: 3
+            deviconClass: devicon-javascript-plain
+
+          - name: TypeScript
+            level: 2
+            deviconClass: devicon-typescript-plain
+
+          - name: HTML
+            level: 3
+            deviconClass: devicon-html5-plain
+
+          - name: CSS
+            level: 2
+            deviconClass: devicon-css3-plain
+
+          - name: Lua
+            level: 3
+            deviconClass: devicon-lua-plain
+
+          - name: Rust
+            level: 1
+            deviconClass: devicon-rust-plain
+
+    - sectionName: Frontend
+      list:
+          - name: Web Components
+            level: 2
+
+          - name: React
+            level: 1
+            deviconClass: devicon-react-original
+
+          - name: Svelte
+            level: 3
+
+          - name: Angular
+            level: 1
+            deviconClass: devicon-angularjs-plain
+            
+          - name: Vue
+            level: 1
+            deviconClass: devicon-vuejs-plain
+
+    - sectionName: Backend
+      list:
+          - name: GNU/Linux
+            level: 2
+            deviconClass: devicon-linux-plain
+
+          - name: NodeJS
+            level: 3
+            deviconClass: devicon-nodejs-plain
+
+    - sectionName: Databases
+      list:
+          - name: MongoDB
+            level: 2
+            deviconClass: devicon-mongodb-plain
+
+          - name: MySQL
+            level: 1
+            deviconClass: devicon-mysql-plain
+            
+    - sectionName: CI/CD
+      list:
+          - name: GitHub Actions
+            level: 2
+            deviconClass: devicon-github-original
+
+          - name: GitLab Pipelines
+            level: 1
+            deviconClass: devicon-gitlab-plain
+
+          - name: Docker
+            level: 2
+            deviconClass: devicon-docker-plain
+
+    - sectionName: Hosting
+      list:
+          - name: CF Workers
+            level: 3
+
+          - name: AWS
+            level: 1
+            deviconClass: devicon-amazonwebservices-original
+
+          - name: GCP
+            level: 1
+            deviconClass: devicon-googlecloud-plain
+
+          - name: Azure
+            level: 1
+
+          - name: Oracle
+            level: 1
+            deviconClass: devicon-oracle-original

@@ -1,3 +1,4 @@
+
 tasks:
   - init: npm i
     command: npm run dev
@@ -5,3 +6,9 @@ tasks:
 ports:
   - port: 8080
     onOpen: ignore
+  - port: 3001
+    onOpen: ignore
+
+vscode:
+  extensions:
+    - digitalbrainstem.javascript-ejs-support
