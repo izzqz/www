@@ -181,12 +181,8 @@ layout: null
                     <figcaption><%= s.sectionName %></figcaption>
                     <ul>
                         <% s.list.forEach(tech => { %>
-                        <%
-                        let devicon;
-                        if (tech.deviconClass) devicon = `<i class="${tech.deviconClass}"></i>`
-                        %>
                         <li class="level-<%= tech.level %>">
-                            <%- devicon %><%= tech.name %>
+                            <%- tech.icon %><%= tech.name %>
                         </li>
                         <% }); %>
                     </ul>

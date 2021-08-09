@@ -4,37 +4,36 @@ pdfSize: '2.6Mb'
 # 1 -> Partly used
 # 2 -> Advanced used
 # 3 -> Expert
-# TODO: rename deviconClass --> icon
 technologies:
     - sectionName: Languages
       list:
           - name: JavaScript
             level: 3
-            deviconClass: devicon-javascript-plain
+            icon: <i class="devicon-javascript-plain"></i>
 
           - name: TypeScript
             level: 2
-            deviconClass: devicon-typescript-plain
+            icon: <i class="devicon-typescript-plain"></i>
 
           - name: HTML
             level: 3
-            deviconClass: devicon-html5-plain
+            icon: <i class="devicon-html5-plain"></i>
 
           - name: CSS
             level: 2
-            deviconClass: devicon-css3-plain
+            icon: <i class="devicon-css3-plain"></i>
 
           - name: PHP
             level: 1
-            deviconClass: devicon-php-plain 
+            icon: <i class="devicon-php-plain"></i>
 
           - name: Lua
             level: 3
-            deviconClass: devicon-lua-plain
+            icon: <i class="devicon-lua-plain"></i>
 
           - name: Rust
             level: 1
-            deviconClass: devicon-rust-plain
+            icon: <i class="devicon-rust-plain"></i>
 
     - sectionName: Frontend
       list:
@@ -43,68 +42,71 @@ technologies:
 
           - name: React
             level: 1
-            deviconClass: devicon-react-original
+            icon: <i class="devicon-react-original"></i>
 
           - name: Svelte
             level: 3
 
           - name: Angular
             level: 1
-            deviconClass: devicon-angularjs-plain
-            
+            icon: <i class="devicon-angularjs-plain"></i>
+
           - name: Vue
             level: 1
-            deviconClass: devicon-vuejs-plain
+            icon: <i class="devicon-vuejs-plain"></i>
 
     - sectionName: Backend
       list:
           - name: GNU/Linux
             level: 2
-            deviconClass: devicon-linux-plain
+            icon: <i class="devicon-linux-plain"></i>
 
           - name: NodeJS
             level: 3
-            deviconClass: devicon-nodejs-plain
+            icon: <i class="devicon-nodejs-plain"></i>
+
+          - name: Deno
+            level: 2
 
           - name: NestJS
             level: 2
-            deviconClass: devicon-nestjs-plain
+            icon: <i class="devicon-nestjs-plain"></i>
 
           - name: Express
             level: 3
-            deviconClass: 
+            icon: <i class="devicon-express-original"></i>
 
     - sectionName: Databases
       list:
           - name: MongoDB
             level: 2
-            deviconClass: devicon-mongodb-plain
+            icon: <i class="devicon-mongodb-plain"></i>
 
           - name: Redis
             level: 2
-            deviconClass: devicon-redis-plain
+            icon: <i class="devicon-redis-plain"></i>
 
           - name: PostgreSQL
             level: 1
-            deviconClass: devicon-postgresql-plain
+            icon: <i class="devicon-postgresql-plain"></i>
 
           - name: MySQL
             level: 1
-            deviconClass: devicon-mysql-plain
-            
+            icon: <i class="devicon-mysql-plain"></i>
+
     - sectionName: CI/CD
       list:
           - name: GH Actions
             level: 2
-            deviconClass: devicon-github-original
+            icon: <i class="devicon-github-original"></i>
 
           - name: GL Pipelines
             level: 1
-            deviconClass: devicon-gitlab-plain
+            icon: <i class="devicon-gitlab-plain"></i>
 
           - name: Docker
             level: 2
-            deviconClass: devicon-docker-plain
+            icon: <i class="devicon-docker-plain"></i>
 
           - name: TeamCity
             level: 1
@@ -116,15 +118,15 @@ technologies:
 
           - name: AWS
             level: 1
-            deviconClass: devicon-amazonwebservices-original
+            icon: <i class="devicon-amazonwebservices-original"></i>
 
           - name: GCP
             level: 1
-            deviconClass: devicon-googlecloud-plain
+            icon: <i class="devicon-googlecloud-plain"></i>
 
           - name: Azure
             level: 1
 
           - name: Oracle
             level: 1
-            deviconClass: devicon-oracle-original
+            icon: <i class="devicon-oracle-original"></i>
