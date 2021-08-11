@@ -59,6 +59,23 @@ technologies:
             level: 1
             icon: <i class="devicon-vuejs-plain"></i>
 
+    - sectionName: CI/CD
+      list:
+          - name: GH Actions
+            level: 2
+            icon: <i class="devicon-github-original"></i>
+
+          - name: GL Pipelines
+            level: 1
+            icon: <i class="devicon-gitlab-plain"></i>
+
+          - name: Docker
+            level: 1
+            icon: <i class="devicon-docker-plain"></i>
+
+          - name: Ansible
+            level: 2
+
     - sectionName: Backend
       list:
           - name: GNU/Linux
@@ -68,9 +85,6 @@ technologies:
           - name: Nginx
             level: 2
             icon: <i class="devicon-nginx-original"></i>
-
-          - name: Caddy
-            level: 1
 
           - name: NodeJS
             level: 3
@@ -86,6 +100,19 @@ technologies:
           - name: Express
             level: 3
             icon: <i class="devicon-express-original"></i>
+
+          - name: RxJs
+            level: 2
+
+          - name: Jest
+            level: 2
+            icon: <i class="devicon-jest-plain"></i>
+
+          - name: Mongoose
+            level: 3
+
+          - name: TypeORM
+            level: 1
 
     - sectionName: Databases
       list:
@@ -108,23 +135,6 @@ technologies:
           - name: SQLite
             level: 2
 
-    - sectionName: CI/CD
-      list:
-          - name: GH Actions
-            level: 2
-            icon: <i class="devicon-github-original"></i>
-
-          - name: GL Pipelines
-            level: 1
-            icon: <i class="devicon-gitlab-plain"></i>
-
-          - name: Docker
-            level: 1
-            icon: <i class="devicon-docker-plain"></i>
-
-          - name: Ansible
-            level: 2
-
     - sectionName: Cloud Hosting
       list:
           - name: CF Workers
@@ -138,28 +148,27 @@ technologies:
             level: 1
             icon: <i class="devicon-googlecloud-plain"></i>
 
-          - name: Azure
+    - sectionName: Specifications
+      list:
+          - name: HTTP/FTP
+            level: 2
+
+          - name: TCP/IP
             level: 1
 
-          - name: Oracle
-            level: 1
-            icon: <i class="devicon-oracle-original"></i>
+          - name: RTMP/RTP
+            level: 3
 
-    - sectionName: Libs
+          - name: SSL/TLS
+            level: 1
+
+          - name: PGP
+            level: 1
+
+    - sectionName: Other libs
       list:
           - name: FFmpeg
             level: 2
-          
-          - name: RxJs
-            level: 1
 
-          - name: Jest
-            level: 2
-            icon: <i class="devicon-jest-plain"></i>
-
-          - name: Mongoose
+          - name: shadowsocks/V2ray
             level: 3
-
-          - name: TypeORM
-            level: 1
-          

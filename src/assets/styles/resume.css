@@ -34,6 +34,50 @@ ul.tags-container li {
     border-radius: 0.25rem;
 }
 
+:root {
+    --level-3-color: #ff0000;
+    --level-2-color: #ffa500;
+    --level-1-color: #808080;
+}
+
+i.level-1::before {
+    color: var(--level-1-color);
+    content: '\2022';
+    font-size: 1.5rem;
+    font-style: normal;
+    margin-right: 0.2rem;
+}
+
+i.level-2::before {
+    color: var(--level-2-color);
+    content: '\2022';
+    font-size: 1.5rem;
+    font-style: normal;
+    margin-right: 0.2rem;
+}
+
+i.level-3::before {
+    color: var(--level-3-color);
+    content: '\2022';
+    font-size: 1.5rem;
+    font-style: normal;
+    margin-right: 0.2rem;
+}
+
+span.levels-presentation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+span.levels-presentation span {
+    margin-right: 1.5em;
+}
+
 .technologies-section {
     column-count: 3;
     column-rule-width: 0;
@@ -88,13 +132,17 @@ ul.tags-container li {
 }
 
 .technologies-section li.level-3::before {
-    color: #ff0000;
+    color: var(--level-3-color);
 }
 
 .technologies-section li.level-2::before {
-    color: #ffa500;
+    color: var(--level-2-color);
 }
 
 .technologies-section li.level-1::before {
-    color: #808080;
+    color: var(--level-1-color);
+}
+
+.custom-list li::marker {
+    font-size: 1rem;
 }
