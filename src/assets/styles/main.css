@@ -134,28 +134,32 @@ h6 {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.802rem;
 }
 
 h1.accent {
-    font-size: 2.5rem;
+    font-size: 2.027rem;
     margin: 0.2em 0 1em 0;
 }
 
+h1.no-accent {
+    font-size: 1.602rem; 
+}
+
 h2 {
-    font-size: 1.85rem;
+    font-size: 1.602rem;
 }
 
 h3 {
-    font-size: 1.55rem;
+    font-size: 1.424rem;;
 }
 
 h4 {
-    font-size: 1.25rem;
+    font-size: 1.266rem;
 }
 
 h5 {
-    font-size: 1rem;
+    font-size: 1.125rem;
 }
 
 h6 {
