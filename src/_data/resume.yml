@@ -1,5 +1,5 @@
 ---
-pdfSize: '2.6Mb'
+pdfSize: '250kb'
 # Any section has list with 3 diferent levels
 # 1 -> Partly used
 # 2 -> Advanced used
@@ -59,8 +59,23 @@ technologies:
             level: 1
             icon: <i class="devicon-vuejs-plain"></i>
 
-    - sectionName: CI/CD
+          - name: jQuery
+            level: 1
+            icon: <i class="devicon-jquery-plain"></i>
+
+    - sectionName: Infrastructure
       list:
+          - name: CF Workers
+            level: 3
+
+          - name: AWS
+            level: 1
+            icon: <i class="devicon-amazonwebservices-original"></i>
+
+          - name: GCP
+            level: 1
+            icon: <i class="devicon-googlecloud-plain"></i>
+
           - name: GH Actions
             level: 2
             icon: <i class="devicon-github-original"></i>
@@ -68,6 +83,10 @@ technologies:
           - name: GL Pipelines
             level: 1
             icon: <i class="devicon-gitlab-plain"></i>
+
+          - name: Vagrant
+            level: 1
+            icon: <i class="devicon-vagrant-plain"></i>
 
           - name: Docker
             level: 1
@@ -126,31 +145,14 @@ technologies:
 
           - name: PostgreSQL
             level: 1
-            icon: <i class="devicon-postgresql-plain"></i>
-
-          - name: MySQL
-            level: 1
-            icon: <i class="devicon-mysql-plain"></i>
-
-          - name: SQLite
-            level: 2
-
-    - sectionName: Cloud Hosting
-      list:
-          - name: CF Workers
-            level: 3
-
-          - name: AWS
-            level: 1
-            icon: <i class="devicon-amazonwebservices-original"></i>
-
-          - name: GCP
-            level: 1
-            icon: <i class="devicon-googlecloud-plain"></i>
+            icon: <i class="devicon-postgresql-plain"></i>  
 
     - sectionName: Specifications
       list:
-          - name: HTTP/FTP
+          - name: HTTP
+            level: 3
+
+          - name: WebSocket
             level: 2
 
           - name: TCP/IP
@@ -158,6 +160,9 @@ technologies:
 
           - name: RTMP/RTP
             level: 3
+
+          - name: SRT
+            level: 2
 
           - name: SSL/TLS
             level: 1

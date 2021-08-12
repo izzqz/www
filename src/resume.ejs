@@ -51,11 +51,23 @@ layout: null
                 font-size: 2rem;
             }
 
+            body > nav {
+                margin: 0.6rem 0;
+            }
+
+            body > nav ul {
+                margin: 0;
+            }
+
+            body > nav ul li {
+                margin: 0;
+            }
+
             nav.header a {
                 color: #6193cc;
             }
 
-            @media print {
+            @media print {           
                 @page {
                     size: letter;
                 }
@@ -114,7 +126,11 @@ layout: null
 
             <h2>Current interests and ambitions</h2>
 
-            <p>I'm interest on web app development.</p>
+            <p>
+                
+            </p>
+
+            <!-- <p>I'm interest on web app development.</p>
             <p>
                 So, my area of competence is Frontend/Backend development and System Administration.
                 I'm partly interested in software engendering, media codec solutions and project
@@ -124,7 +140,7 @@ layout: null
             <p>
                 Try my best to design scalable and easy to maintain backends and don't shy away from
                 hard problems.
-            </p>
+            </p> -->
 
             <h2>Experience</h2>
 
@@ -246,30 +262,44 @@ layout: null
                 </li>
             </ul>
 
-            <h2>Additional</h2>
-
-            <h3>Other experience</h3>
+            <h2>Other experience</h2>
 
             <ul>
                 <li>
                     <span class="title">Teaching experience</span>
                     <p>
-                        I teach children.
+                        Taught children Lua programming in Minecraft/Roblox for 2 months.
+                        These were groups of 7, 10 and 12 years old.
                     </p>
                 </li>
                 <li>
                     <span class="title">Esport event organisation</span>
                     <p>
-                        I have experience with some...
+                        Participated in the organization of several local esports events in Overwatch and Quake 3 Arena.
+                        LAN setup and contact with players.
                     </p>
                 </li>
             </ul>
 
-            <h3>About me and other interests</h3>
-
-            <p>
-                Hi ama silafen
-            </p>
+            <nav class="header hide-on-print">
+                <ul>
+                    <li>
+                        <a onClick="window.print()" href="#" class="text-link hide-on-print"
+                            ><i data-feather="printer"></i>Print this</a
+                        >
+                    </li>
+                    <li>
+                        <a href="/resume.pdf" class="text-link hide-on-print" id="pdfDownloadButton"
+                            ><i data-feather="download"></i>Download PDF <%= resume.pdfSize %>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/resume-short" class="text-link hide-on-print"
+                            ><i data-feather="file"></i>One page version</a
+                        >
+                    </li>
+                </ul>
+            </nav>
         </section>
         <script>
             feather.replace({
@@ -278,6 +308,17 @@ layout: null
                 width: 14,
                 style: 'position: relative; bottom: -0.05em; margin: 0 0.14em 0 0.14em;',
             });
+
+            // Colored technology icon effect
+            document.querySelectorAll('.technologies-section li').forEach(li => {
+                // 'colored' is devicon class
+                li.onmouseover = () => {
+                    li.firstElementChild.classList.add('colored');
+                }
+                li.onmouseout = () => {
+                    li.firstElementChild.classList.remove('colored');
+                }
+            })
         </script>
     </body>
 </html>

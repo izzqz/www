@@ -1,3 +1,10 @@
+@media print {
+    .technologies-section {
+        margin-bottom: 2rem;
+    }
+}
+
+
 span.sub-title {
     color: #808080;
     white-space: nowrap;
@@ -90,9 +97,9 @@ span.levels-presentation span {
 
 .technologies-section figure {
     margin: 0 1em 1em 0;
-    padding: 1rem;
+    padding: 1em;
     background-color: #fafafa;
-    border-radius: 0.3rem;
+    border-radius: 0.3em;
     width: 12em;
     display: inline-block;
 }
