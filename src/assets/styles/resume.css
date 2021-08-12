@@ -1,9 +1,36 @@
-@media print {
+.name {
+    font-size: 2rem;
+}
+
+body > nav {
+    margin: 0.6rem 0;
+}
+
+body > nav ul {
+    margin: 0;
+}
+
+body > nav ul li {
+    margin: 0;
+}
+
+nav.header a {
+    color: #6193cc;
+}
+
+@media print {           
+    @page {
+        size: letter;
+    }
+
+    .hide-on-print {
+        display: none;
+    }
+
     .technologies-section {
         margin-bottom: 2rem;
     }
 }
-
 
 span.sub-title {
     color: #808080;

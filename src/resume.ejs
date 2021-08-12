@@ -46,38 +46,6 @@ layout: null
         <%- include('_includes/layouts/webpack.ejs') %>
     </head>
     <body>
-        <style>
-            .name {
-                font-size: 2rem;
-            }
-
-            body > nav {
-                margin: 0.6rem 0;
-            }
-
-            body > nav ul {
-                margin: 0;
-            }
-
-            body > nav ul li {
-                margin: 0;
-            }
-
-            nav.header a {
-                color: #6193cc;
-            }
-
-            @media print {           
-                @page {
-                    size: letter;
-                }
-
-                .hide-on-print {
-                    display: none;
-                }
-            }
-        </style>
-
         <nav class="header hide-on-print">
             <ul>
                 <li>
@@ -127,20 +95,21 @@ layout: null
             <h2>Current interests and ambitions</h2>
 
             <p>
-                
+                I'm web app developer who do Frontend/Backend and System Administration.
+                Carry about UX and code quality.
+                Also partly interest in software engendering,
+                media codec solutions and project managment.
             </p>
 
-            <!-- <p>I'm interest on web app development.</p>
             <p>
-                So, my area of competence is Frontend/Backend development and System Administration.
-                I'm partly interested in software engendering, media codec solutions and project
-                managment.
+                My goal is to find a position that allows me to solve real people problems.
+                And grow as a professional and person.
             </p>
 
             <p>
                 Try my best to design scalable and easy to maintain backends and don't shy away from
                 hard problems.
-            </p> -->
+            </p>
 
             <h2>Experience</h2>
 
@@ -182,6 +151,16 @@ layout: null
                         <ul>
                             <li>
                                 <span class="title">Media streaming service</span>
+                                <ul class="tags-container">
+                                    <li><i class="devicon-nodejs-plain colored"></i>&emsp14;Node</li>
+                                    <li>RxJS</li>
+                                    <li>ffmpeg</li>
+                                    <li>bash</li>
+                                    <li>SRT</li>
+                                    <li>HLS</li>
+                                    <li>VideoJS</li>
+                                    <li>Vanilla Frontend</li>
+                                </ul>
                                 <p>
                                     Created streaming service for a lot of cameras.
                                     Managed by nodejs and SRT protocol with ffmpeg.
@@ -190,6 +169,14 @@ layout: null
                             </li>
                             <li>
                                 <span class="title">Enterprice VPN Setup</span>
+                                <ul class="tags-container">
+                                    <li><i class="devicon-nodejs-plain colored"></i>&emsp14;Node</li>
+                                    <li>shadowsocks</li>
+                                    <li>bash</li>
+                                    <li>V2Ray</li>
+                                    <li>Ansible</li>
+                                    <li>Clodflare</li>
+                                </ul>
                                 <p>
                                     Setup shadowsocks servers with V2ray and multi user support.
                                     Processes managed by nodejs.
