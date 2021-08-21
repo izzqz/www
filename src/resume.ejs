@@ -44,6 +44,16 @@ layout: null
         <script src="https://unpkg.com/colcade@0/colcade.js"></script>
 
         <%- include('_includes/layouts/webpack.ejs') %>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BPVCJC918X"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-BPVCJC918X');
+        </script>
     </head>
     <body>
         <nav class="header hide-on-print">
