@@ -1,0 +1,331 @@
+---
+permalink: resume-short/index.html
+layout: null
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Vyacheslav's Resume</title>
+        <link rel="index" title="Vyacheslav izzqz" href="https://izzqz.me" />
+
+        <meta name="description" content="Resume of Vyacheslav Melnikov" />
+        <meta name="copyright" content="Vyacheslav Melnikov 2021" />
+        <meta name="Classification" content="Business" />
+        <meta name="author" content="Vyacheslav Melnikov, vyacheslav@izzqz.me" />
+        <meta name="keywords" content="resume" />
+        <meta name="reply-to" content="vyacheslav@izzqz.me" />
+        <meta name="url" content="https://izzqz.me/resume" />
+        <meta name="identifier-URL" content="https://izzqz.me" />
+        <meta name="category" content="resume" />
+        <meta name="revisit-after" content="30 days" />
+
+        <!-- OpenGraph -->
+        <meta property="og:title" content="Vyacheslav's Resume" />
+        <meta property="og:type" content="document" />
+        <meta property="og:url" content="https://izzqz.me/resume" />
+        <meta property="og:image" content="https://izzqz.me/assets/images/portrait-square.png" />
+        <meta property="og:description" content="Resume of Vyacheslav Melnikov" />
+        <meta name="og:email" content="vyacheslav@izzqz.me" />
+
+        <!-- Twitter specific -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:url" content="https://izzqz.me/resume" />
+        <meta name="twitter:title" content="Vyacheslav's Resume" />
+        <meta name="twitter:description" content="Resume of Vyacheslav Melnikov" />
+        <meta name="twitter:image" content="https://izzqz.me/assets/images/portrait-square.png" />
+
+        <!-- CDN Debpendensies -->
+        <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css"
+        />
+        <script src="https://unpkg.com/colcade@0/colcade.js"></script>
+
+        <%- include('../_includes/layouts/webpack.ejs') %>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BPVCJC918X"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-BPVCJC918X');
+        </script>
+    </head>
+    <body>
+        <nav class="header hide-on-print">
+            <ul>
+                <li>
+                    <a onClick="window.print()" href="#" class="text-link hide-on-print"
+                        ><i data-feather="printer"></i>Print this</a
+                    >
+                </li>
+                <li>
+                    <a href="/resume-short.pdf" class="text-link hide-on-print" id="pdfDownloadButton"
+                        ><i data-feather="download"></i>Download PDF <%= resume.pdfSizeOnePage %>
+                    </a>
+                </li>
+                <li>
+                    <a href="/resume" class="text-link hide-on-print"
+                        ><i data-feather="file-text"></i>Full version</a
+                    >
+                </li>
+            </ul>
+        </nav>
+
+        <section itemscope itemtype="https://schema.org/Person">
+            <h1 itemprop="name" class="name">Vyacheslav Melnikov</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="text-link" href="mailto:vyacheslav@izzqz.me" itemprop="email">
+                            <i data-feather="mail"></i>vyacheslav@izzqz.me
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-link" href="https://izzqz.me" itemprop="url" target="_blank">
+                            <i data-feather="globe"></i>izzqz.me
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="text-link"
+                            href="https://github.com/izzqz"
+                            rel="noopener"
+                            target="_blank"
+                            ><i data-feather="github"></i>git.io/izzqz</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+
+            <h2>Current interests and ambitions</h2>
+
+            <p>
+                I'm web app developer who do Frontend/Backend and System Administration.
+                Carry about UX and code quality.
+                Also partly interest in software engendering,
+                media codec solutions and project managment.
+            </p>
+
+            <p>
+                My goal is to find a position that allows me to grow as a professional and person.
+            </p>
+
+            <p>
+                Try my best to design scalable and easy to maintain backends and don't shy away from
+                hard problems.
+            </p>
+
+            <h2>Experience</h2>
+
+            <ul>
+                <li>
+                    <span class="title"> Fullstack Developer | H.I.T. </span>
+                    <span class="sub-title"> full-time [2019-2020]</span>
+                    <ul class="tags-container">
+                        <li><i class="devicon-nodejs-plain colored"></i>&emsp14;Node</li>
+                        <li><i class="devicon-nestjs-plain colored"></i>&emsp14;Nest.js</li>
+                        <li><i class="devicon-graphql-plain colored"></i>&emsp14;GraphQL</li>
+                        <li><i class="devicon-mongodb-plain colored"></i>&emsp14;MongoDB</li>
+                        <li><i class="devicon-jest-plain colored"></i>&emsp14;Jest</li>
+                        <li>Svelte</li>
+                        <li>Cloudflare Workers</li>
+                        <li>
+                            <i class="devicon-github-original colored"></i>&emsp14;GitHub Actions
+                        </li>
+                    </ul>
+                    <div class="description">
+                        Working on a startup whitch converting mouse sensitivity between different
+                        game engines.
+                        <ul>
+                            <li>Develop and design backend API (GQL/REST).</li>
+                            <li>Develop frontend SPA.</li>
+                            <li>
+                                Do a lot of research about trigonometry behind camera motion in 3D
+                                games. And included it to the application logic.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <span class="title">Freelance Experience</span>
+                    <span class="sub-title">part-time [2017-2019]</span>
+                    <div class="description">
+                        Worked on a variety of freelance projects. Here is a list of those that I am
+                        most proud of:
+                        <ul>
+                            <li>
+                                <span class="title">Media streaming service</span>
+                                <ul class="tags-container">
+                                    <li><i class="devicon-nodejs-plain colored"></i>&emsp14;Node</li>
+                                    <li>RxJS</li>
+                                    <li>ffmpeg</li>
+                                    <li>bash</li>
+                                    <li>SRT</li>
+                                    <li>HLS</li>
+                                    <li>VideoJS</li>
+                                    <li>Vanilla Frontend</li>
+                                </ul>
+                                <p>
+                                    Created streaming service for a lot of cameras.
+                                    Managed by nodejs and SRT protocol with ffmpeg.
+                                    The results is HLS streams with ~4 seconds latency.
+                                </p>
+                            </li>
+                            <li>
+                                <span class="title">Enterprice VPN Setup</span>
+                                <ul class="tags-container">
+                                    <li><i class="devicon-nodejs-plain colored"></i>&emsp14;Node</li>
+                                    <li>shadowsocks</li>
+                                    <li>bash</li>
+                                    <li>V2Ray</li>
+                                    <li>Ansible</li>
+                                    <li>Clodflare</li>
+                                </ul>
+                                <p>
+                                    Setup shadowsocks servers with V2ray and multi user support.
+                                    Processes managed by nodejs.
+                                    All bypassed by CloudFlare and perfeclty worked in China internet.
+                                 </p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+            <h2>Technical Skills</h2>
+
+            <p>
+                I'm always able to learn other languages and tools. Based on general
+                enthusiasm, versatile experience and personal interest in the area.
+            </p>
+
+            <h3>Technologes</h3>
+
+            <span class="levels-presentation">
+                <i class="level-1"></i><span>Partially used</span> <i class="level-2"></i
+                ><span>Advanced understanding</span> <i class="level-3"></i
+                ><span>Most experienced</span>
+            </span>
+
+            <div class="technologies-section">
+                <% resume.technologies.forEach(s => { %>
+                <figure>
+                    <figcaption><%= s.sectionName %></figcaption>
+                    <ul>
+                        <% s.list.forEach(tech => { %>
+                        <li class="level-<%= tech.level %>">
+                            <%- tech.icon %><%= tech.name %>
+                        </li>
+                        <% }); %>
+                    </ul>
+                </figure>
+                <% }); %>
+            </div>
+
+            <h3>Spoken Languages</h3>
+
+            <ul class="custom-list">
+                <li style="list-style-type: '🇬🇧'">
+                    <span class="title">English</span>
+                    <span class="sub-title">B1 Intermediate</span>
+                </li>
+                <li style="list-style-type: '🇷🇺'">
+                    <span class="title">Russian</span>
+                    <span class="sub-title">Native</span>
+                </li>
+
+                <li style="list-style-type: '🇨🇳'">
+                    <span class="title">Chinese</span>
+                    <span class="sub-title">HSK4 (2018)</span>
+                </li>
+            </ul>
+
+            <h2>Education</h2>
+
+            <ul>
+                <li>
+                    <span class="title"
+                        >Hebei Institute Of Internations Bussines And Economics</span
+                    >
+                    <br />
+                    <span class="sub-title">河北对外经贸职业学院 [2017-2019]</span>
+                    <p>College, Economics and bussiness managment</p>
+                </li>
+            </ul>
+
+            <h2>Other experience</h2>
+
+            <ul>
+                <li>
+                    <span class="title">Teaching experience</span>
+                    <p>
+                        Taught children Lua programming in Minecraft/Roblox for 2 months.
+                        These were groups of 7, 10 and 12 years old.
+                    </p>
+                </li>
+                <li>
+                    <span class="title">Esport event organisation</span>
+                    <p>
+                        Participated in the organization of several local esports events in Overwatch and Quake 3 Arena.
+                        LAN setup and contact with players.
+                    </p>
+                </li>
+            </ul>
+
+            <nav class="header hide-on-print">
+                <ul>
+                    <li>
+                        <a onClick="window.print()" href="#" class="text-link hide-on-print"
+                            ><i data-feather="printer"></i>Print this</a
+                        >
+                    </li>
+                    <li>
+                        <a href="/resume.pdf" class="text-link hide-on-print" id="pdfDownloadButton"
+                            ><i data-feather="download"></i>Download PDF <%= resume.pdfSize %>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/resume-short" class="text-link hide-on-print"
+                            ><i data-feather="file"></i>One page version</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <script>
+            feather.replace({
+                viewBox: '0 -1 24 24',
+                height: 14,
+                width: 14,
+                style: 'position: relative; bottom: -0.05em; margin: 0 0.14em 0 0.14em;',
+            });
+
+            // Colored technology icon effect
+            document.querySelectorAll('.technologies-section li').forEach(li => {
+                // 'colored' is devicon class
+                li.onmouseover = () => {
+                    li.firstElementChild.classList.add('colored');
+                }
+                li.onmouseout = () => {
+                    li.firstElementChild.classList.remove('colored');
+                }
+            })
+        </script>
+    </body>
+</html>
+<!-- 
+__/\\\\\\\\\\\\\____/\\\\\\\\\\\_____/\\\\\\\\\\\\______/\\\________/\\\__/\\\______________/\\\__/\\\________/\\\_
+ _\/\\\/////////\\\_\/////\\\///____/\\\//////////______\/\\\_______\/\\\_\/\\\_____________\/\\\_\/\\\_______\/\\\_
+  _\/\\\_______\/\\\_____\/\\\______/\\\_________________\/\\\_______\/\\\_\/\\\_____________\/\\\_\/\\\_______\/\\\_
+   _\/\\\\\\\\\\\\\\______\/\\\_____\/\\\____/\\\\\\\_____\/\\\_______\/\\\_\//\\\____/\\\____/\\\__\/\\\_______\/\\\_
+    _\/\\\/////////\\\_____\/\\\_____\/\\\___\/////\\\_____\/\\\_______\/\\\__\//\\\__/\\\\\__/\\\___\/\\\_______\/\\\_
+     _\/\\\_______\/\\\_____\/\\\_____\/\\\_______\/\\\_____\/\\\_______\/\\\___\//\\\/\\\/\\\/\\\____\/\\\_______\/\\\_
+      _\/\\\_______\/\\\_____\/\\\_____\/\\\_______\/\\\_____\//\\\______/\\\_____\//\\\\\\//\\\\\_____\//\\\______/\\\__
+       _\/\\\\\\\\\\\\\/___/\\\\\\\\\\\_\//\\\\\\\\\\\\/_______\///\\\\\\\\\/_______\//\\\__\//\\\_______\///\\\\\\\\\/___
+        _\/////////////____\///////////___\////////////___________\/////////__________\///____\///__________\/////////_____
+-->

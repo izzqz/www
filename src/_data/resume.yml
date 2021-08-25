@@ -1,5 +1,6 @@
 ---
 pdfSize: '250kb'
+pdfSizeOnePage: '150kb'
 # Any section has list with 3 diferent levels
 # 1 -> Partly used
 # 2 -> Advanced used
