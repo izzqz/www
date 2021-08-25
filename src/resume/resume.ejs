@@ -49,7 +49,9 @@ layout: null
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-BPVCJC918X"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+            function gtag() {
+                dataLayer.push(arguments);
+            }
             gtag('js', new Date());
 
             gtag('config', 'G-BPVCJC918X');
@@ -59,14 +61,9 @@ layout: null
         <nav class="header hide-on-print">
             <ul>
                 <li>
-                    <a onClick="window.print()" href="#" class="text-link hide-on-print"
-                        ><i data-feather="printer"></i>Print this</a
+                    <a href="javascript:window.print();" class="text-link hide-on-print"
+                        ><i data-feather="printer"></i>Get PDF</a
                     >
-                </li>
-                <li>
-                    <a href="/resume.pdf" class="text-link hide-on-print" id="pdfDownloadButton"
-                        ><i data-feather="download"></i>Download PDF <%= resume.pdfSize %>
-                    </a>
                 </li>
                 <li>
                     <a href="/resume-short" class="text-link hide-on-print"
@@ -105,10 +102,9 @@ layout: null
             <h2>Current interests and ambitions</h2>
 
             <p>
-                I'm web app developer who do Frontend/Backend and System Administration.
-                Carry about UX and code quality.
-                Also partly interest in software engendering,
-                media codec solutions and project managment.
+                I'm web app developer who do Frontend/Backend and System Administration. Carry about
+                UX and code quality. Also partly interest in software engendering, media codec
+                solutions and project managment.
             </p>
 
             <p>
@@ -161,7 +157,9 @@ layout: null
                             <li>
                                 <span class="title">Media streaming service</span>
                                 <ul class="tags-container">
-                                    <li><i class="devicon-nodejs-plain colored"></i>&emsp14;Node</li>
+                                    <li>
+                                        <i class="devicon-nodejs-plain colored"></i>&emsp14;Node
+                                    </li>
                                     <li>RxJS</li>
                                     <li>ffmpeg</li>
                                     <li>bash</li>
@@ -171,15 +169,17 @@ layout: null
                                     <li>Vanilla Frontend</li>
                                 </ul>
                                 <p>
-                                    Created streaming service for a lot of cameras.
-                                    Managed by nodejs and SRT protocol with ffmpeg.
-                                    The results is HLS streams with ~4 seconds latency.
+                                    Created streaming service for a lot of cameras. Managed by
+                                    nodejs and SRT protocol with ffmpeg. The results is HLS streams
+                                    with ~4 seconds latency.
                                 </p>
                             </li>
                             <li>
                                 <span class="title">Enterprice VPN Setup</span>
                                 <ul class="tags-container">
-                                    <li><i class="devicon-nodejs-plain colored"></i>&emsp14;Node</li>
+                                    <li>
+                                        <i class="devicon-nodejs-plain colored"></i>&emsp14;Node
+                                    </li>
                                     <li>shadowsocks</li>
                                     <li>bash</li>
                                     <li>V2Ray</li>
@@ -188,9 +188,9 @@ layout: null
                                 </ul>
                                 <p>
                                     Setup shadowsocks servers with V2ray and multi user support.
-                                    Processes managed by nodejs.
-                                    All bypassed by CloudFlare and perfeclty worked in China internet.
-                                 </p>
+                                    Processes managed by nodejs. All bypassed by CloudFlare and
+                                    perfeclty worked in China internet.
+                                </p>
                             </li>
                         </ul>
                     </div>
@@ -200,8 +200,8 @@ layout: null
             <h2>Technical Skills</h2>
 
             <p>
-                I'm always able to learn other languages and tools. Based on general
-                enthusiasm, versatile experience and personal interest in the area.
+                I'm always able to learn other languages and tools. Based on general enthusiasm,
+                versatile experience and personal interest in the area.
             </p>
 
             <h3>Technologes</h3>
@@ -218,9 +218,7 @@ layout: null
                     <figcaption><%= s.sectionName %></figcaption>
                     <ul>
                         <% s.list.forEach(tech => { %>
-                        <li class="level-<%= tech.level %>">
-                            <%- tech.icon %><%= tech.name %>
-                        </li>
+                        <li class="level-<%= tech.level %>"><%- tech.icon %><%= tech.name %></li>
                         <% }); %>
                     </ul>
                 </figure>
@@ -264,30 +262,25 @@ layout: null
                 <li>
                     <span class="title">Teaching experience</span>
                     <p>
-                        Taught children Lua programming in Minecraft/Roblox for 2 months.
-                        These were groups of 7, 10 and 12 years old.
+                        Taught children Lua programming in Minecraft/Roblox for 2 months. These were
+                        groups of 7, 10 and 12 years old.
                     </p>
                 </li>
                 <li>
                     <span class="title">Esport event organisation</span>
                     <p>
-                        Participated in the organization of several local esports events in Overwatch and Quake 3 Arena.
-                        LAN setup and contact with players.
+                        Participated in the organization of several local esports events in
+                        Overwatch and Quake 3 Arena. LAN setup and contact with players.
                     </p>
                 </li>
             </ul>
 
-            <nav class="header hide-on-print">
+            <nav class="hide-on-print">
                 <ul>
                     <li>
-                        <a onClick="window.print()" href="#" class="text-link hide-on-print"
-                            ><i data-feather="printer"></i>Print this</a
+                        <a href="javascript:window.print();" class="text-link hide-on-print"
+                            ><i data-feather="printer"></i>Get PDF</a
                         >
-                    </li>
-                    <li>
-                        <a href="/resume.pdf" class="text-link hide-on-print" id="pdfDownloadButton"
-                            ><i data-feather="download"></i>Download PDF <%= resume.pdfSize %>
-                        </a>
                     </li>
                     <li>
                         <a href="/resume-short" class="text-link hide-on-print"
@@ -306,20 +299,20 @@ layout: null
             });
 
             // Colored technology icon effect
-            document.querySelectorAll('.technologies-section li').forEach(li => {
+            document.querySelectorAll('.technologies-section li').forEach((li) => {
                 // 'colored' is devicon class
                 li.onmouseover = () => {
                     if (li.firstElementChild) {
                         li.firstElementChild.classList.add('colored');
                     }
-                }
-                
+                };
+
                 li.onmouseout = () => {
                     if (li.firstElementChild) {
                         li.firstElementChild.classList.remove('colored');
                     }
-                }
-            })
+                };
+            });
         </script>
     </body>
 </html>

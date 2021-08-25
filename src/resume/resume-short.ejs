@@ -59,14 +59,9 @@ layout: null
         <nav class="header hide-on-print">
             <ul>
                 <li>
-                    <a onClick="window.print()" href="#" class="text-link hide-on-print"
-                        ><i data-feather="printer"></i>Print this</a
+                    <a href="javascript:window.print();" class="text-link hide-on-print"
+                        ><i data-feather="printer"></i>Get PDF</a
                     >
-                </li>
-                <li>
-                    <a href="/resume-short.pdf" class="text-link hide-on-print" id="pdfDownloadButton"
-                        ><i data-feather="download"></i>Download PDF <%= resume.pdfSizeOnePage %>
-                    </a>
                 </li>
                 <li>
                     <a href="/resume" class="text-link hide-on-print"
@@ -183,18 +178,13 @@ layout: null
             <nav class="header hide-on-print">
                 <ul>
                     <li>
-                        <a onClick="window.print()" href="#" class="text-link hide-on-print"
-                            ><i data-feather="printer"></i>Print this</a
+                        <a href="javascript:window.print();" class="text-link hide-on-print"
+                            ><i data-feather="printer"></i>Get PDF</a
                         >
                     </li>
                     <li>
-                        <a href="/resume.pdf" class="text-link hide-on-print" id="pdfDownloadButton"
-                            ><i data-feather="download"></i>Download PDF <%= resume.pdfSize %>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/resume-short" class="text-link hide-on-print"
-                            ><i data-feather="file"></i>One page version</a
+                        <a href="/resume" class="text-link hide-on-print"
+                            ><i data-feather="file-text"></i>Full version</a
                         >
                     </li>
                 </ul>

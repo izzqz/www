@@ -14,10 +14,6 @@ body > nav ul li {
     margin: 0;
 }
 
-nav.header a {
-    color: #6193cc;
-}
-
 @media print {           
     @page {
         size: letter;
@@ -25,10 +21,6 @@ nav.header a {
 
     .hide-on-print {
         display: none;
-    }
-
-    .technologies-section {
-        margin-bottom: 2rem;
     }
 }
 
