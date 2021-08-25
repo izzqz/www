@@ -309,10 +309,15 @@ layout: null
             document.querySelectorAll('.technologies-section li').forEach(li => {
                 // 'colored' is devicon class
                 li.onmouseover = () => {
-                    li.firstElementChild.classList.add('colored');
+                    if (li.firstElementChild) {
+                        li.firstElementChild.classList.add('colored');
+                    }
                 }
+                
                 li.onmouseout = () => {
-                    li.firstElementChild.classList.remove('colored');
+                    if (li.firstElementChild) {
+                        li.firstElementChild.classList.remove('colored');
+                    }
                 }
             })
         </script>
