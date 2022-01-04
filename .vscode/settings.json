@@ -1,7 +1,0 @@
-{
-    "yaml.schemaStore.enable": false,
-    "languageToolLinter.languageTool.ignoredWordsInWorkspace": [
-        "hemlo",
-        "parisienne"
-    ]
-}

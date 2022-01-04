@@ -1,5 +1,0 @@
----
-title: #TITLE# 
-description:
-#DRAFT#
----
