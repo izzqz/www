@@ -1,26 +1,9 @@
 {
-  "name": "izzqz.me",
-  "version": "3.0.0",
-  "description": "izzqz.me webpage",
-  "main": "index.js",
-  "scripts": {
-    "build": "eleventy",
-    "dev": "eleventy --serve",
-    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --dryrun"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/izzqz/www"
-  },
-  "author": "izzqz <vyacheslav@izzqz.me>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/izzqz/www/issues"
-  },
-  "homepage": "https://github.com/izzqz/www#readme",
-  "devDependencies": {
-    "@11ty/eleventy": "^0.11.1",
-    "clean-css": "^4.2.3",
-    "terser": "^5.6.0-beta"
-  }
+    "name": "izzqz.me",
+    "version": "3.0.0",
+    "description": "izzqz.me webpage",
+    "scripts": {},
+    "license": "MIT",
+    "devDependencies": {},
+    "dependencies": {}
 }
